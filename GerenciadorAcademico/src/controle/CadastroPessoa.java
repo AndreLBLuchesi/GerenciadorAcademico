@@ -210,6 +210,7 @@ public class CadastroPessoa {
     public static void listar(List<Pessoa> listaPessoas, String entidadeModelo) {
         if (listaPessoas.isEmpty()) {
             System.out.println("Lista vazia!");
+            return;
         }
         System.out.println("\n--------Lista de "+ entidadeModelo+"---------");
         for (Pessoa p : listaPessoas) {
