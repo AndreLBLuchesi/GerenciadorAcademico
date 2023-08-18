@@ -6,6 +6,7 @@ import java.util.List;
 import modelo.Aluno;
 import modelo.Coordenador;
 import modelo.Funcionario;
+import modelo.FuncionarioTerceirizado;
 import modelo.Pessoa;
 import modelo.Professor;
 import util.DialogBoxUtils;
@@ -28,6 +29,7 @@ public class CadastroPessoa {
                     switch (entidadeModelo) {
                         case "Aluno" -> cadastrarAluno();
                         case "Funcionario" -> cadastrarFuncionario();
+                        case "FuncionarioTercerizado" -> cadastrarFuncionarioTercerizado();
                         case "Professor" -> cadastrarProfessor();
                         case "Coordenador" ->cadastrarCoordenador();
                         default -> new AssertionError();
@@ -55,6 +57,10 @@ public class CadastroPessoa {
 
     public static void cadastrarFuncionario() {
         cadastrar(new Funcionario());
+    }
+    
+    public static void cadastrarFuncionarioTercerizado() {
+        cadastrar(new FuncionarioTerceirizado());
     }
 
     public static void cadastrarProfessor() {
@@ -223,6 +229,7 @@ public class CadastroPessoa {
         switch (entidadeModelo) {
             case "Aluno" ->{ return CadastroAluno.listaDePessoaAlunos(); }
             case "Funcionario" ->{ return CadastroFuncionario.listaDePessoaFuncionarios(); }
+            case "FuncionarioTercerizado" ->{ return CadastroFuncionarioTercerizado.listaDePessoaFuncionariosTercerizados(); }
             case "Professor" ->{ return CadastroProfessor.listaDePessoaProfessores(); }
             case "Coordenador" ->{ return CadastroCoordenador.listaDePessoasCoordenadores(); }
             case "Pessoa" ->{ return listaPessoas; }

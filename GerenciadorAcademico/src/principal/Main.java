@@ -39,6 +39,7 @@ public class Main {
                     CadastroPessoa.menuControlePessoa("Coordenador");
                 case 5 ->
                     CadastroCurso.menuControleCurso();
+                case 6 -> CadastroPessoa.menuControlePessoa("FuncionarioTercerizado");
                 case 0 -> {
                     System.out.println("Saindo do sistema...");
                 }

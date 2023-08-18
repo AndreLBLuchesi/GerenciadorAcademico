@@ -9,7 +9,7 @@ import util.Input;
 public class CadastroFuncionario {
 
     public static void setarDados(Funcionario fun) {
-        //ControlePessoa.setarDados(fun);
+      
         System.out.print("CTPS: ");
         fun.setCtps(Input.nextLine());
         System.out.print("Salário: ");

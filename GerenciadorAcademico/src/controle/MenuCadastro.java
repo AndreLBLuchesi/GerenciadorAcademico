@@ -15,6 +15,7 @@ public class MenuCadastro {
             System.out.println("| 3 - Cadastro Professor        |");
             System.out.println("| 4 - Cadastro Coordenador      |");
             System.out.println("| 5 - Cadastro Curso            |");
+            System.out.println("| 6 - Cadastro Funcionário Tercerizado |");
             System.out.println("| 0 - SAIR                      |");
             System.out.println("##################################");
     }
